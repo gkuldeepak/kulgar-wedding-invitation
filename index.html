@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wedding Invitation</title>
+    <link rel="icon" href="https://www.svgrepo.com/show/214817/wedding-marry.svg" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+
+    <!-- SimplyCountdown.js -->
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+    <script src="countdown/simplyCountdown.min.js"></script>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+    <!-- CSS path -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
+      <main>
+        <h4>To <span> Our Beloved One's</span></h4>
+        <h1>Kuldeepak & Garima</h1>
+        <p>are set to celebrate their love with a beautiful wedding celebration.</p>
+        <!-- Letak sini sbb nk display countdown sini -->
+        <div class="simply-countdown"></div>
+        <a href="#home" class="btn btn-lg mt-4" onClick="enableScroll()">See Invitation</a>
+      </main>
+    </section>
+
+    <!-- OffCanvas NavBar-->
+    <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">#KulGarForever</a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Zul</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#info">Info</a>
+              <a class="nav-link" href="#story">Story</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#gifts">Gifts</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="home" class="home">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2>Golden Moments</h2>
+            <h3>Will be on June 11, 2025 at Tulip Resort, Mathura</h3>
+            <p>Therefore, with all due respect, respect the honour of your gracious presence on this auspicious occasion.</p>
+          </div>
+        </div>
+
+        <div class="row couple">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-8 text-end">
+                <h3>Kuldeepak Gupta</h3>
+                <p>
+                  <h4>Grand Son of</h4>
+                  Smt. Krishnabala Gupta <br> Shri Satya Prakash Gupta
+
+                  <br>
+                  <br>
+                <h4>Son Of</h4>
+                  Mrs. Shalini Gupta <br> Mr. Yatendra Kumar Gupta</p>
+              </div>
+              <div class="col-4">
+                <img src="img/husband.jpeg" alt="Husband" class="img-responsive rounded-circle"  style="width: 200px; height: 290px;"/>
+              </div>
+            </div>
+          </div>
+
+          <!-- Icon heart letak sini -->
+          <span class="heart"><i class="bi bi-heart-fill"></i></span>
+
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-4">
+                <img src="img/wife.jpeg" alt="Wife" class="img-responsive rounded-circle"  style="width: 200px; height: 290px;"/>
+              </div>
+              <div class="col-8">
+                <h3>Garima Varshney</h3>
+                <p>
+                <h4>Grand Daughter of</h4>
+                  Smt. Santosh Kumari <br> Late Shri Jaharmal Varshney
+
+                  <br>
+                  <br>
+                <h4>Daughter Of</h4>
+                  Mrs. Lalita Varshney<br>Late Mr. Yatendra Varshney</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Info about perkahwinan -->
+    <section id="info" class="info">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Event Information</h2>
+            <p class="alamat">
+              Address: Tulip Resort, Masani Road<br />
+              Garravkendra, Mathura, Uttar Pradesh 281003.
+            </p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.2148487240774!2d77.6623664!3d27.527592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3973718faa84cf9d%3A0x87f05d2b11851e34!2sTulip%20Resorts!5e0!3m2!1sen!2sin!4v1714300872001!5m2!1sen!2sin"
+              width="100%"
+              height="250"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <a href="https://shorturl.at/wxuRq" target="_blank" class="btn btn-light btn-sm my-3">Click to open the map</a>
+            <p class="description">
+              It is hoped that the address and date will not be mistaken. If you arrive at your destination but there are no signs of a wedding taking place, it could be that you have the wrong schedule or the wrong place.
+            </p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light mb-5">
+              <div class="card-header">HALDI</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>10.00 AM Onwards</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar3 d-block"></i>
+                    <span>Tuesday, 10 June 2025</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">A splash of yellow, a touch of tradition, Join us as we begin the wedding celebration!</div>
+            </div>
+          </div>
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light">
+              <div class="card-header">ENGAGEMENT</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>6.00 PM Onwards</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar3 d-block"></i>
+                    <span>Tuesday, 10 June 2025</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">Rings will be exchanged, hearts will be joined. Please grace the engagement celebration with your presence.</div>
+            </div>
+          </div>
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light mb-5">
+              <div class="card-header">SANGEET</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>1.00 PM Onwards</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar3 d-block"></i>
+                    <span>Wednesday, 11 June 2025</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">Let the music play and the hearts sway! Join us for Sangeet filled with rhythm, laughter, and celebration.</div>
+            </div>
+          </div>
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light">
+              <div class="card-header">WEDDING</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>7.00 PM Onwards</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar3 d-block"></i>
+                    <span>Wednesday, 11 June 2025</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">A new chapter begins... Join us in celebrating the sacred bond of love and togetherness.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Info -->
+
+    <!-- Story section -->
+    <section id="story" class="story">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>How Our Love Bloomed</span>
+            <h2>Our Story</h2>
+            <p>It started with a hello, And turned into a forever. A new chapter awaits— And your presence will make it complete.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-image" style="background-image: url(https://picsum.photos/302/302)"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>First meeting</h3>
+                    <span>6 July 2024</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Met as strangers, Shared stories like friends, And stayed in each other's hearts ever since.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image" style="background-image: url(https://picsum.photos/300/300)"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Get serious</h3>
+                    <span>10 July 2024</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>When love calls for commitment, it becomes more than a celebration — it becomes a life.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-image" style="background-image: url(https://picsum.photos/301/301)"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Fiance</h3>
+                    <span>18 August 2024</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Roka done. Love locked. The journey to forever has officially begun!</p></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Story section End -->
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+      <!-- Container to hold the gallery content -->
+      <div class="container">
+        <!-- Row for the gallery title and description, centered in the middle -->
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <!-- Subtitle and heading for the gallery -->
+            <span>Our Memories</span>
+            <h2>Gallery</h2>
+            <!-- Description text under the heading -->
+            <p>A journey of joy and tradition—relive the magic through these frames.</p>
+          </div>
+        </div>
+
+        <!-- Row for the gallery images, with responsive column classes -->
+        <!-- The column classes control how many images are displayed per row based on screen size -->
+        <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
+          <!-- Individual gallery item, repeated for each image -->
+          <div class="col mt-3">
+            <!-- Anchor tag for lightbox effect, linking to a larger version of the image -->
+            <a href="img/IMG_3254.JPG" data-toggle="lightbox" data-caption="1" data-gallery="mygallery">
+              <!-- Image thumbnail, set to be fluid, full width, and rounded -->
+              <img src="img/IMG_3254.JPG" alt="1" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+
+          <!-- Repeat for each gallery item, changing the image source, caption, and lightbox attributes -->
+          <div class="col mt-3">
+            <a href="img/IMG_3414.JPG" data-toggle="lightbox" data-caption="2" data-gallery="mygallery">
+              <img src="img/IMG_3414.JPG" alt="2" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/IMG_4575 (1).jpg" data-toggle="lightbox" data-caption="3" data-gallery="mygallery">
+              <img src="img/IMG_4575 (1).jpg" alt="3" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/IMG_3452 (1).jpg" data-toggle="lightbox" data-caption="4" data-gallery="mygallery">
+              <img src="img/IMG_3452 (1).jpg" alt="4" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/WhatsApp Image 2025-04-06 at 7.37.48 PM.jpeg" data-toggle="lightbox" data-caption="5" data-gallery="mygallery">
+              <img src="img/WhatsApp Image 2025-04-06 at 7.37.48 PM.jpeg" alt="5" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/WhatsApp Image 2025-04-28 at 10.30.13 PM.jpeg" data-toggle="lightbox" data-caption="6" data-gallery="mygallery">
+              <img src="img/WhatsApp Image 2025-04-28 at 10.30.13 PM.jpeg" alt="6" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Gallery Section End -->
+
+    <!-- Gift -->
+    <section id="gifts" class="gifts">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>EXPRESSION OF LOVE</span>
+            <h2>Send Gifts</h2>
+            <p>No boxes to carry, no wrapping to do— just scan, bless, and be through! Thank you for being part of our celebration.</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center text-center">
+          <div class="col-md-6">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <div class="fw-bold">UPI ID</div>
+                GUPTA.MAG@OKICICI
+              </li>
+              <li class="list-group-item">
+                <div class="fw-bold">QR Code</div>
+                <img src="img/Qr Code.jpeg" alt="QR" class="img-thumbnail" width="150" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Gift End -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <small class="block">&copy; 2025 #KulGarForever Wedding. All Rights Reserved.</small>
+            <br>
+
+            <small class="block">Crafted by Kuldeepak with lots of <span class="heart"><i class="bi bi-heart-fill"></i></span>  for Garima. </small>
+
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Audio Section -->
+    <div id="audio-container">
+      <!-- Audio element that automatically plays and loops the specified audio file -->
+      <audio id="song" autoplay loop>
+        <source src="audio/Bruno Mars - Marry You (Official Lyric Video).mp3" type="audio/mp3" />
+      </audio>
+
+      <!-- Wrapper for the audio icon, initially hidden (display: none) -->
+      <div class="audio-icon-wrapper" style="display: none">
+        <!-- Icon representing the audio status (initially a spinning disc icon) -->
+        <i class="bi bi-disc"></i>
+      </div>
+    </div>
+    <!-- Audio Section End -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <!-- Lightbox Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+
+    <!-- Countdown tu set random sahaja -->
+    <script>
+      simplyCountdown(".simply-countdown", {
+        year: 2025, // required
+        month: 6, // required
+        day: 11, // required
+        hours: 0, // Default is 0 [0-23] integer
+        words: {
+          //words displayed into the countdown
+          days: { singular: "day", plural: "days" },
+          hours: { singular: "hour", plural: "hours" },
+          minutes: { singular: "minute", plural: "minutes" },
+          seconds: { singular: "second", plural: "seconds" },
+        },
+        plural: true, //use plurals
+      });
+    </script>
+
+    <!-- Solve problem when the website change to mobile screen for NavBar -->
+    <script>
+      // Select elements with the class "sticky-top" and "offcanvas"
+      const stickyTop = document.querySelector(".sticky-top");
+      const offcanvas = document.querySelector(".offcanvas");
+
+      // Event listener for when the offcanvas is shown
+      offcanvas.addEventListener("show.bs.offcanvas", function () {
+        // Change the overflow style of the sticky-top element to 'visible'
+        // This allows the sticky-top content to be fully displayed without being clipped
+        stickyTop.style.overflow = "visible";
+      });
+
+      // Event listener for when the offcanvas is hidden
+      offcanvas.addEventListener("hidden.bs.offcanvas", function () {
+        // Change the overflow style of the sticky-top element to 'hidden'
+        // This prevents the content from overflowing when the offcanvas is hidden
+        stickyTop.style.overflow = "hidden";
+      });
+    </script>
+
+    <!-- JavaScript to control scroll behavior and audio playback -->
+    <script>
+      // Select the root element, the audio icon wrapper, the icon inside the wrapper, and the audio element
+      const rootElement = document.querySelector(":root");
+      const audioIconWrapper = document.querySelector(".audio-icon-wrapper");
+      const audioIcon = document.querySelector(".audio-icon-wrapper i");
+      const song = document.querySelector("#song");
+      let isPlaying = false; // Variable to track whether the audio is playing or not
+
+      // Function to disable scrolling
+      function disableScroll() {
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+        // Prevent scrolling by locking the scroll position
+        window.onscroll = function () {
+          window.scrollTo(scrollTop, scrollLeft);
+        };
+
+        // Set the scroll behavior to 'auto' to prevent smooth scrolling during the lock
+        rootElement.style.scrollBehavior = "auto";
+      }
+
+      // Function to enable scrolling
+      function enableScroll() {
+        window.onscroll = function () {}; // Unlock scrolling
+        rootElement.style.scrollBehavior = "smooth"; // Re-enable smooth scrolling
+        playAudio(); // Start playing the audio when scrolling is enabled
+      }
+
+      // Function to play audio and display the audio icon
+      function playAudio() {
+        song.volume = 0.1; // Set the audio volume to 10%
+        audioIconWrapper.style.display = "flex"; // Show the audio icon wrapper
+        song.play(); // Start playing the audio
+        isPlaying = true; // Update the state to indicate audio is playing
+      }
+
+      // Toggle audio playback when the audio icon is clicked
+      audioIconWrapper.onclick = function () {
+        if (isPlaying) {
+          song.pause(); // Pause the audio if it is playing
+          audioIcon.classList.remove("bi-disc"); // Remove disc icon
+          audioIcon.classList.add("bi-pause-circle"); // Show pause icon
+        } else {
+          song.play(); // Play the audio if it is paused
+          audioIcon.classList.add("bi-disc"); // Show disc icon
+          audioIcon.classList.remove("bi-pause-circle"); // Remove pause icon
+        }
+
+        isPlaying = !isPlaying; // Toggle the playing state
+      };
+
+      // Uncomment the following lines if you want to disable scroll until the audio starts playing
+      // if (!localStorage.getItem('opened')) {
+      //   disableScroll();
+      // }
+
+      disableScroll(); // Initially disable scrolling
+    </script>
+
+    <!-- The user isn't redirected to the webapp after submit form -->
+    <script>
+      // Wait until the entire page is fully loaded
+      window.addEventListener("load", function () {
+        // Select the form element with the ID "my-form"
+        const form = document.getElementById("my-form");
+
+        // Add an event listener for the form's submit event
+        form.addEventListener("submit", function (e) {
+          // Prevent the form from submitting the usual way and reloading the page
+          e.preventDefault();
+
+          // Collect all form data into a FormData object
+          const data = new FormData(form);
+
+          // Get the URL from the form's action attribute
+          const action = e.target.action;
+
+          // Send the form data to the server using the fetch API
+          fetch(action, {
+            method: "POST", // Use the POST method for the request
+            body: data, // Send the form data in the request body
+          }).then(() => {
+            // Show an alert to the user once the form is successfully submitted
+            alert("Confirmation was successfully sent!");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
